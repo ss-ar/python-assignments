@@ -10,9 +10,9 @@ total_streams = track1_streams + track2_streams
 gross_revenue = total_streams * pay_per_stream
 net_profit = gross_revenue - studio_fee
 
-print("#####################################")
+print("##########################################")
 print("\t BEAT-STREAM ANALYTICS")
-print("##################################### \n")
+print("########################################### \n")
 print(f"Artist: {artist_name}")
 print(f"Album: {album_name}\n")
 print("--- STREAMING DATA ---")
@@ -22,7 +22,7 @@ print(f">> Total Streams: {total_streams}\n")
 print("--- REVENUE CALCULATIONS ---")
 print(f"Gross Revenue (${pay_per_stream}/stream): ${gross_revenue}")
 print(f"Studio Recording Fee: ${studio_fee}\n")
-print("========================================")
+print("==========================================")
 print(f"FINAL ARTIST PAYOUT: ${net_profit}")
-print("========================================")
+print("===========================================")
 

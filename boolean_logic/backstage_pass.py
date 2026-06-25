@@ -1,1 +1,5 @@
-pass_type = input("E")
+pass_type = input("Enter pass type: ")
+age = int(input("Enter age: "))
+has_camera = input("Carrying a pro camera? (yes/no): ")
+access_granted = (pass_type=="vip" or pass_type=="staff" or pass_type=="artist") and age>=18 and (has_camera == "no" or pass_type == "staff")
+print(f"Access Granted? {access_granted}")
