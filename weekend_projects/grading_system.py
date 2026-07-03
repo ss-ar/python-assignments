@@ -1,3 +1,14 @@
+#Option 1
+# def average_calc(a,b,c):
+#   avg = (a+b+c)/3
+#   return avg
+
+#Cleaner approach using the builtin sum and len functions
+def average_calc(grade_list):
+  total = sum(grade_list)
+  avg = total/len(grade_list)
+  return avg
+  
 grades = []
 print("=== UNIVERSITY GRADING PORTAL ===")
 student_name = input("Enter student: ")
@@ -7,7 +18,8 @@ assignment_3 = float(input("Enter grade for Assignment 3: "))
 grades.append(assignment_1)
 grades.append(assignment_2)
 grades.append(assignment_3)
-average = (grades[0]+grades[1]+grades[2])/3
+# average = average_calc(grades[0],grades[1],grades[2])
+average = average_calc(grades)
 if average>=90.0:
   grade="A"
 elif average>=80.0:
